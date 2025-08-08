@@ -43,7 +43,7 @@ const ForumCard = ({data}) => {
       			</div>
       			<div className={styles.contents}>
         				<div className={styles.information}>
-          					<div className={styles.quote}>{content}</div>
+          					<div className={styles.quote}>"{content}"</div>
           					<div className={styles.author}>- {username}</div>
           					<div className={styles.source}>{source}</div>
         				</div>

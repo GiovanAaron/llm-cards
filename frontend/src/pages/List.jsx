@@ -2,9 +2,6 @@ import React from "react";
 import ProductCard from "../components/product/ProductCard.jsx";
 import ForumCard from "../components/forum/forumCard.jsx";
 import ResearchCard from "../components/research/ResearchCard.jsx";
-import cardSet1 from "../data/cards-set-1.json";
-import cardSet2 from "../data/cards-set-2.json";
-import cardSet3 from "../data/cards-set-3.json";
 import fetchCards from "../services/mockApi.js";
 
 export default function List() {
@@ -14,7 +11,7 @@ export default function List() {
     console.log('data length', data.length)
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap',}}>
+    <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: '0.1rem' }}>
       
 
     {data.map((card, index) => {

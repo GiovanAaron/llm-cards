@@ -51,7 +51,7 @@ const ProductCard = ({data}) => {
           					<i className={styles.tag}>premium</i>
         				</div> */}
         <div className={styles.tagArray}>
-          {tags.map((tag, index) => (
+          {tags && tags.map((tag, index) => (
             <i className={styles.tag} key={index}>
               {tag}
             </i>

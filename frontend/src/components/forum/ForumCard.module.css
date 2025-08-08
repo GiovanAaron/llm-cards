@@ -93,13 +93,15 @@
   	box-shadow: 0rem 0.46875rem 0.483125rem rgba(0, 0, 0, 0.25);
   	border-radius: 0.937rem;
   	background-color: #ff8aff;
-  	display: flex;
+  	/* display: flex; */
   	flex-direction: column;
-  	align-items: flex-end;
-  	justify-content: center;
-  	padding: 0.937rem 0.706rem;
+  	/* align-items: flex-end; */
+  	/* justify-content: center; */
+  	padding: 0.5rem 0.706rem;
   	font-size: 0.938rem;
 	color: #704970;
+	align-self: flex-end;
+	margin-top: -.4rem
 }
 .forumCard {
   	position: relative;
@@ -108,7 +110,7 @@
   	flex-direction: column;
   	align-items: center;
   	justify-content: flex-start;
-  	gap: 1.437rem;
+  	gap: 1rem;
   	text-align: right;
   	font-size: 1.25rem;
   	color: #874087;

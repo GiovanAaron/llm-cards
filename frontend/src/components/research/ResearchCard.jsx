@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 const ResearchCard = ({data}) => {
 
-    const {title, snippet, tags} = data
+    const {title, snippet, tags, source} = data
 
     const [showMore, setShowMore] = useState(false);
 
@@ -40,9 +40,9 @@ const ResearchCard = ({data}) => {
                 </div>
                 <div className={styles.contents}>
                         <div className={styles.information}>
-                            <div className={styles.quote}>{snippet}</div>
+                            <div className={styles.quote}>"{snippet}"</div>
                         
-                            <div className={styles.source}>Reddit</div>
+                            <div className={styles.source}>{source}</div>
                         </div>
                             <div className={styles.tagArray}>
                                   {tags.map((tag, index) => (
